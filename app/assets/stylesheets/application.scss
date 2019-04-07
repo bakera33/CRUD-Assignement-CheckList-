@@ -18,59 +18,61 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* Mixins, variables, etc... */
+
 
 @mixin nav_link_hover {
 	transition: 0.4s;
-	color: lighten(#222, 30%);
+	color: #fff;
 	text-decoration: none;
 }
 
-/* Universal styles */
+
 
 body {
 	font-family: 'Montserrat', serif;
+
 }
 
 a {
-	color: darken(#e7e7e7, 70%);
+	color: darken(#e7e7e7, 60%);
 }
 
-/* Navbar and navigation styles */
+
 
 .navbar {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .navbar-default {
 
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #fff;
+	background-color: #00ced1;
 
 	.navbar-nav > li > a {
-		color: #222;
+		color: #fff;
 	}
 
 	.navbar-link {
-		color: #222;
+		color: #fff;
 	}
 
 	.navbar-brand {
-		color: #222;
+		color: #fff;
 		letter-spacing: 1.25px;
 	}
 
 }
 
-/* Item styles */
+
 
 .item {
 	border-bottom: 1px solid #e7e7e7;
 	padding-bottom: 1.5em;
 	.item-title {
-		font-family: 'Oswald', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		margin-top: 0;
 	}
 	.item-desc {
