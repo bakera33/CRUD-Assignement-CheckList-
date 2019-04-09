@@ -1,6 +1,4 @@
 
-<!-- Checks to see if a user is signed in, if one is, it will list its checklist. -->
-<!-- If not, it will render the landing page that asks the user to sign up or login. -->
 <% if user_signed_in? %>
 	<div class="col-md-6 col-md-offset-3">
 		<% @items.each do |item| %>
@@ -23,6 +21,7 @@
 							<% end %>
 						</div>
 					</div>
+					
 				<% else %>
 					<div class="row item">
 						<div class="col-md-8">
