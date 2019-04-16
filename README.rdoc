@@ -1,4 +1,4 @@
-== README
+== README (Ruby 2.2.2 & Rails 4.2.5)
 
 *You create two objects.
     Two objects that were created were Item objects for the checklist and User objects
