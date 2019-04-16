@@ -1,28 +1,67 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*You create two objects.
+    Two objects that were created were Item objects for the checklist and User objects
+    that can sign into the application and have their own lists. Each item post can be CRUD.
+    A user can sign up with email and password, and login and logout.
 
-Things you may want to cover:
+*Each object has at least 3 variables with some different types.
+    The items object has form variables of :title, label: "Item", :description, :submit
+    The user object has the following: :database_authenticatable, :registerable,
+           :recoverable, :rememberable, :trackable, :validatable
 
-* Ruby version
+*The objects have a belongs_to and has_many_relationship.
+    Items created have a "belongs_to" relationship with the user, and the user has a
+    "has_many_relationship" with each user having many items unique to the user signed in.
 
-* System dependencies
+*You can CRUD each object.
+    You are able to CRUD every item made in the checklist. Only after marking the item completed
+    you can edit the item. Outside of that you can create read and delete the item anytime you'd like.
 
-* Configuration
+    For users, I had Dr. Monberg take a look at the Users being "CRUDable", but that would require an
+    admin. role to manage user accounts, so he said that if each user has posts unique to themselves then
+    this should be fine for the requirement.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Your project is on GitHub.
+    My Checklist CRUD project is on GitHub under the link "https://github.com/bakera33/CheckList"
+    You may clone this and check it out. Created with Ruby 2.2.2 and Rails 4.2.5.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
+All of the following:
+
+*Change default homepage.
+    When going to localhost:3000, you are taken to the route 'items#index' as a homepage rather than the
+    default Rails Application welcome page.
+
+*Include Bootstrap.
+    The application is very bootstrap heavy, with bootstrap styling in the navbar, homepage layout, and
+    a simple grid layout keeping everything inline. The gem is located in the gemfile.
+
+*Include strong validations.
+    There are validations and tests in different folders through out the rails app, but I am not
+    exactly sure if they are done correctly. If you can find them and they are valid then that works!
+
+
+*Write tests.
+    There are validations and tests in different folders through out the rails app, but I am not
+    exactly sure if they are done correctly. If you can find them and they are valid then that works!
+
+*Clear and accurate ReadMe.
+    You're lookin at it!
+
+
+
+
+At least one of the following accomplished at a high level:
+
+*Gem with added functionality:
+    Devise - allows the ability to have individual users in the Application
+    Bootstrap - introduces styling and layouts
+
+*Clever HTML & CSS
+    The HTML structure organizes the pages where you can navigate easily and find everything that you need
+    when navigating through a checklist app.
+    The CSS included decorates the application making the website visually appealing and attractive to
+    users.

@@ -14,6 +14,82 @@
  *= require_self
  */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://use.typekit.net/axi8itj.css");
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+
+@mixin nav_link_hover {
+	transition: 0.4s;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+body {
+	font-family: cubano, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+a {
+	color: darken(#e7e7e7, 60%);
+}
+
+
+
+.navbar {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.navbar-default {
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #00ced1;
+
+	.navbar-nav > li > a {
+		color: #fff;
+	}
+
+	.navbar-link {
+		color: #fff;
+	}
+
+	.navbar-brand {
+		color: #fff;
+		letter-spacing: 1.25px;
+	}
+
+}
+
+
+
+.item {
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 1.5em;
+	.item-title {
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 0;
+	}
+	.item-desc {
+		font-size: 1em;
+	}
+	.time-ago {
+		color: darken(#e7e7e7, 50%);
+		font-size: 0.85em;
+		letter-spacing: 1.25;
+	}
+	.item-sub-title {
+		margin-bottom: 0;
+	}
+}
+
+.item:nth-child(n+1) {
+	padding-top: 1.5em;
+}
